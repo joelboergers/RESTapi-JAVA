@@ -1,0 +1,421 @@
+{
+	"info": {
+		"_postman_id": "face3260-bd56-4be1-a8c8-452f68a59f4b",
+		"name": "rest server",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get anything",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4711/get",
+					"host": [
+						"localhost"
+					],
+					"port": "4711",
+					"path": [
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get someone with firstname",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"firstname\":\"Joel\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4711/get/someone",
+					"host": [
+						"localhost"
+					],
+					"port": "4711",
+					"path": [
+						"get",
+						"someone"
+					],
+					"query": [
+						{
+							"key": "firstname",
+							"value": "Joël",
+							"disabled": true
+						},
+						{
+							"key": "lastname",
+							"value": "Börgers",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get someone with lastname",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"lastname\":\"test2\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4711/get/someone",
+					"host": [
+						"localhost"
+					],
+					"port": "4711",
+					"path": [
+						"get",
+						"someone"
+					],
+					"query": [
+						{
+							"key": "firstname",
+							"value": "Joël",
+							"disabled": true
+						},
+						{
+							"key": "lastname",
+							"value": "Börgers",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add user test1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"firstname\":\"test1\",\"lastname\":\"test1\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4711/add",
+					"host": [
+						"localhost"
+					],
+					"port": "4711",
+					"path": [
+						"add"
+					],
+					"query": [
+						{
+							"key": "firstname",
+							"value": "Joel",
+							"disabled": true
+						},
+						{
+							"key": "lastname",
+							"value": "Boergers",
+							"disabled": true
+						},
+						{
+							"key": null,
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add user test2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"firstname\":\"test2\",\"lastname\":\"test2\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4711/add",
+					"host": [
+						"localhost"
+					],
+					"port": "4711",
+					"path": [
+						"add"
+					],
+					"query": [
+						{
+							"key": "firstname",
+							"value": "Joel",
+							"disabled": true
+						},
+						{
+							"key": "lastname",
+							"value": "Boergers",
+							"disabled": true
+						},
+						{
+							"key": null,
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add user test3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"firstname\":\"test3\",\"lastname\":\"test3\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4711/add",
+					"host": [
+						"localhost"
+					],
+					"port": "4711",
+					"path": [
+						"add"
+					],
+					"query": [
+						{
+							"key": "firstname",
+							"value": "Joel",
+							"disabled": true
+						},
+						{
+							"key": "lastname",
+							"value": "Boergers",
+							"disabled": true
+						},
+						{
+							"key": null,
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit user with firstname",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"firstname\":\"Joel\",\"newfirstname\":\"oui\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4711/edit",
+					"host": [
+						"localhost"
+					],
+					"port": "4711",
+					"path": [
+						"edit"
+					],
+					"query": [
+						{
+							"key": "firstname",
+							"value": "Joel",
+							"disabled": true
+						},
+						{
+							"key": "lastname",
+							"value": "Boergers",
+							"disabled": true
+						},
+						{
+							"key": null,
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit user with lastname",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"lastname\":\"Boergers\",\"newfirstname\":\"oui\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4711/edit",
+					"host": [
+						"localhost"
+					],
+					"port": "4711",
+					"path": [
+						"edit"
+					],
+					"query": [
+						{
+							"key": "firstname",
+							"value": "Joel",
+							"disabled": true
+						},
+						{
+							"key": "lastname",
+							"value": "Boergers",
+							"disabled": true
+						},
+						{
+							"key": null,
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete user with firstname",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"firstname\":\"oui\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4711/delete",
+					"host": [
+						"localhost"
+					],
+					"port": "4711",
+					"path": [
+						"delete"
+					],
+					"query": [
+						{
+							"key": "firstname",
+							"value": "Joel",
+							"disabled": true
+						},
+						{
+							"key": "lastname",
+							"value": "Boergers",
+							"disabled": true
+						},
+						{
+							"key": null,
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete user with lastname",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"lastname\":\"Boergers\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4711/delete",
+					"host": [
+						"localhost"
+					],
+					"port": "4711",
+					"path": [
+						"delete"
+					],
+					"query": [
+						{
+							"key": "firstname",
+							"value": "Joel",
+							"disabled": true
+						},
+						{
+							"key": "lastname",
+							"value": "Boergers",
+							"disabled": true
+						},
+						{
+							"key": null,
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
